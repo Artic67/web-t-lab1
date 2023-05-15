@@ -1,2 +1,2 @@
-# web-t-lab1
+# web-t-labs
 WEB-oriented technologies
