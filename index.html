@@ -2,10 +2,12 @@
 <html>
     <head>
         <title>БІБЛІОТЕКА JQUERY UI</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
         <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/excite-bike/jquery-ui.css">
+
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
         <meta charset="utf-8">
     </head>
     <body>
@@ -44,28 +46,32 @@
                 <p><label for="age">Ваш вік: </label><input id="age" title="Вік потрібен для надання дитячого квитка"></p>
                 <p>Наведіть на поле для вводу, для підсказки</p>
             </div>
+            <div class="task">
+                <h4>Галерея UniteGallery</h4>
+                <a href="unitegallery.html">Відкрити галерею</a>
+            </div>
         </div>
         <script>
-        $( function() {
-            $( "#datepicker" ).datepicker();
-        } );
+            $( function() {
+                $( "#datepicker" ).datepicker();
+            } );
 
-        $( function() {
-            $( "#slider" ).slider({
-                min: 0,
-                max: 100,
-                value: 50,
-                slide: function( event, ui ) {
-                $( "#amount" ).val( ui.value );
-                }
-            });
-            $("#slider").css("border", "1px solid black");
-            $( "#amount" ).val( $( "#slider" ).slider( "value" ) );
-        } );
+            $( function() {
+                $( "#slider" ).slider({
+                    min: 0,
+                    max: 100,
+                    value: 50,
+                    slide: function( event, ui ) {
+                    $( "#amount" ).val( ui.value );
+                    }
+                });
+                $("#slider").css("border", "1px solid black");
+                $( "#amount" ).val( $( "#slider" ).slider( "value" ) );
+            } );
 
-        $( function() {
-            $( document ).tooltip();
-        } );
+            $( function() {
+                $( document ).tooltip();
+            } );
         </script>
     </body>
 </html>
