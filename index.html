@@ -1,134 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Е-Продаж та бронювання залізничних квитків</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" type="text/css" href="fonts.css">
-  <meta charset="utf-8">
-</head>
-<body>
-  <header style="width: 100%;">
-    <div class="header-bg"></div>
-    <div class="header-content">
-        <nav>
+    <head>
+        <title>БІБЛІОТЕКА JQUERY UI</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/excite-bike/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="menu">
             <ul>
-                <li><a href="index.html">головна</a></li>
-                <li><a href="about.html">бронювання</a></li>
-                <li><a href="about.html">розклад</a></li>
-                <li><a href="contact.html">контакти</a></li>
+                <li>Завдання 1 - Ознайомитися з теоретичними відомостями</li>
+                <li><a href="index.html">Завдання 2</a> - Відкрити власний сайт або <b>створити окремо WEB-сторінку</b> (ця сторінка)</li>
+                <li><a href="#task3">Завдання 3</a> - Додати до сайту 2-3 динамічних елементи, додати до сайту плагін галереї UniteGallery.<br>Створити за допомогою бібліотеки: фотогалерею з можливістю перегляду збільшених зображень, слайдер фотографій, слайдер відеоматеріалі</li>
+                <li><a href="#task4">Завдання 4</a> - Додати до сайту кнопки соціальних мереж</li>
+                <li><a href="#task5">Завдання 5</a> - Додати сайту інформери</li>
+                <li><a href="#task6">Завдання 6</a> - Додати сайту один (або більше) із модулів jQuery для мультимедіа (зображення і відео)</li>
             </ul>
-        </nav>
-    </div>
-  </header>
-  <section class="main-head">
-    <div class="main-head-divs bg-filter">
-      <div class="main-head-div">
-        <h1 class="text-white">Ласкаво просимо <br>до е-продажу <br>та бронювання залізничних квитків</h1>
-        <h2 class="text-white">Відкрийте для себе нашу<br>туристичну мережу залізниць</h2>
-      </div>
-      <div class="main-head-div">
-      </div>
-    </div>
-  </section>
-  
+        </div>
+        <div id="task3">
+            <h2>Завдання 3</h2>
+            <div class="task">
+                <h4>Вибір дати з календаря</h4>
+                <p>
+                    Datepicker:
+                    <input type="text" id="datepicker">
+                </p>
+            </div>
+            <div class="task">
+                <h4>Вибір числа за допомогою повзунка</h4>
+                <p>
+                    <label for="amount">Slider: </label>
+                    <input type="text" id="amount" readonly style="border:0; color:rgb(43, 121, 238); font-weight:bold;">
+                </p>
+                <div id="slider"></div>
+            </div>
+            <div class="task">
+                <h4>Організація спливаючих підсказок</h4>
+                <p><a href="#task3" title="Приклад спливаючої підсказки">Tooltips</a> можна прикріпити до будь-якого елементу.<br></p>
 
-  <section class="info-2-section">
-    <div class="upcoming-trains">
-        <h2>Розклад найближчих поїздів</h2>
-        <table>
-          <tr>
-            <th>Номер потягу</th>
-            <th>Відправлення</th>
-            <th>Прибуття</th>
-            <th>Час прибуття</th>
-          </tr>
-          <tr>
-            <td>123</td>
-            <td>Кривий Ріг</td>
-            <td>Фастів</td>
-            <td>08:00</td>
-          </tr>
-          <tr>
-            <td>456</td>
-            <td>Дніпро</td>
-            <td>Вінниця</td>
-            <td>10:30</td>
-          </tr>
-          <tr>
-            <td>789</td>
-            <td>Київ</td>
-            <td>Львів</td>
-            <td>16:30</td>
-          </tr>
-        </table>       
-    </div>
-    <div class="popular-routes">
-        <h2>Популярні маршрути</h2>
-        <ul class="compresseed-ul">
-          <li>Тернопіль - Київ</li>
-          <li>Харків - Київ</li>
-          <li>Дніпро - Вінниця</li>
-          <li>Одеса - Харків</li>
-          <li>Херсон - Дніпро</li>
-        </ul>
-    </div>
-  </section>
+                <p>Tooltips також корисні для елементів форми,<br>щоб показати додаткову інформацію в контексті кожного поля.</p>
+                <p><label for="age">Ваш вік: </label><input id="age" title="Вік потрібен для надання дитячого квитка"></p>
+                <p>Наведіть на поле для вводу, для підсказки</p>
+            </div>
+        </div>
+        <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
 
-  <section class="search-form-section text-white">
-    <div id="train-photo2">
-      <div class="bg-filter"></div>
-    </div>
-    <div class="search-form-right">
-      <div class="search-form-div"> 
-        <h2 id="search-header">Пошук поїздів</h2>
-        <form id="search-form">
-          <div class="form-inputs">
-              <div class="form-left">
-                <div class="form-input form-label">
-                  <label for="origin">Відправлення</label>
-                </div>
-                <div class="form-input form-label">
-                  <label for="destination">Прибуття</label>
-                </div>
-                <div class="form-input form-label">
-                  <label for="date">Дата</label>
-                </div>
-              </div>
-              <div class="form-right">
-                <div class="form-input form-field">
-                  <input type="text" id="origin" name="origin"><br>
-                </div>
-                <div class="form-input form-field">
-                  <input type="text" id="destination" name="destination"><br>
-                </div>
-                <div class="form-input form-field">
-                  <input type="date" id="date" name="date"><br>
-                </div>
-              </div>
-              
-          </div>
-          <div class="search-button-div">
-            <input class="search-button" type="submit" value="пошук">
-          </div>
-        </form>
-      </div>
-    </div>
-    
-  </section>
+        $( function() {
+            $( "#slider" ).slider({
+                min: 0,
+                max: 100,
+                value: 50,
+                slide: function( event, ui ) {
+                $( "#amount" ).val( ui.value );
+                }
+            });
+            $("#slider").css("border", "1px solid black");
+            $( "#amount" ).val( $( "#slider" ).slider( "value" ) );
+        } );
 
-  <footer>
-    <p>&copy; 2023 Електронний продаж та бронювання залізничних квитків.</p>
-  </footer>
-  <style>
-    
-    header {
-    width: 100%;
-    height: 8vh;
-    color: #1F2832;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-  </style>
-</body>
+        $( function() {
+            $( document ).tooltip();
+        } );
+        </script>
+    </body>
 </html>
