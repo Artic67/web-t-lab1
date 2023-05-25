@@ -8,9 +8,13 @@ body {
     min-height: 100vh;
 }
 
+.taskgallery {
+    text-align: center;
+}
+
 .menu {
     padding-top: 40vh;
-    padding-bottom: 50vh;
+    padding-bottom: 40vh;
 }
 
 .task {
@@ -19,53 +23,19 @@ body {
     align-items: center;
 }
 
-footer {
-    width: 100%;
-    height: 8vh;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #1F2832;
-    /*background-color: #1F2832;*/
-    background-color: #FBB90E;
-    position: sticky;
-    top: 0;
-}
-
 h1 {
     font-size: 56px;
 }
 
 h2 {
+    padding-top: 20vh;
     font-size: 32px;
     margin: 10px 0 10px 0;
     font-family: "e-Ukraine-Regular", Arial, Helvetica, sans-serif;
 }
 
-nav {
-    text-align: center;
-}
-
 input {
     font-family: "e-Ukraine-Medium", Arial, Helvetica, sans-serif;
-}
-
-/* Style the navigation links */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin-right: 10px;
-}
-
-nav ul li:last-child {
-    margin-right: 0;
 }
 
 ol {
@@ -83,199 +53,6 @@ li {
     font-size: 32px;
     text-align: center;
     margin-bottom: 30px;
-}
-
-section {
-    text-align: center;
-}
-
-.main-head {
-    width: 100%;
-    height: 80vh;
-}
-
-.main-head-divs {
-    width: 100%;
-    height: 100%;
-    background-image: url('src/train-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-head-divs.bg-filter {
-    background: url('src/train-bg.jpg'), #262626;/*#184c9a;*/
-    background-size: cover;
-    background-position: center;
-    background-blend-mode:soft-light;
-    z-index: 1;
-}
-
-
-.main-head-div {
-    text-align: left;
-    width: 40%;
-}
-
-.info-2-section {
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    margin: 0;
-    padding: 0;
-    background-color: #E9EBEC;
-}
-
-.upcoming-trains, .popular-routes {
-    width: 40%;
-    padding: 11vh 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.upcoming-trains > h2, .popular-routes > h2 {
-    padding: 0 0 3vh 0;
-}
-
-.compresseed-ul {
-    width: 25%;
-}
-
-#train-photo2 {
-    width: 45%;
-    height: 100%;;
-    background-image: url('src/train2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-position-y: center;
-}
-
-#train-photo2 > .bg-filter {
-    background-color: rgba(59, 59, 59, 0.3);
-}
-
-.search-form-section {
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background-color: #14407E;
-}
-
-#search-header {
-    text-align: left;
-    margin-bottom: 3vh;
-}
-
-.search-form-right {
-    width:55%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.search-form-div {
-    width: 100%;
-    max-width: 700px;
-    height: 100%;
-    padding: 6vh 6vw;
-}
-
-#search-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form-inputs {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 3vh;
-}
-
-.form-input {
-    height: 5vh;
-    font-size: 18px;
-    font-family: "e-Ukraine-Medium", Arial, Helvetica, sans-serif;
-    padding: 5px 5px 10px 5px;
-}
-
-.form-left {
-    text-align: left;
-    width: 30%
-}
-
-.form-right {
-    text-align: left;
-    width: 70%;
-}
-
-.form-label {
-    padding: 1vh 0 0 0;
-    font-size: 16px;
-}
-
-.form-field > input {
-    height: 3vh;
-    width: 100%;
-    border: none;
-    border-bottom: 2px solid #E9EBEC;
-    background-color: transparent;
-    color: #E9EBEC;
-    font-size: 24px;
-}
-
-.form-field > input:focus {
-    outline: none;
-    border-bottom: 2px solid #FBB90E;
-}
-
-.search-button-div {
-    width: 100%;
-    text-align: right;
-}
-.search-button-div > input {
-    width: 233px;
-    height: 56px;
-    background-color: #FBB90E;
-    border-radius: 40px;
-}
-
-.search-button {
-    font-family: "e-Ukraine-Medium", Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    border-width: 0;
-    padding: 0.2vw 2vh;
-    border-radius: 4%;
-}
-
-footer {
-    text-align: center;
-}
-
-/* Style the table */
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    border-bottom: 1px solid #ccc;
-    padding: 8px;
-}
-
-th {
-    background-color: #E9EBEC;
 }
 
 .text-white {
