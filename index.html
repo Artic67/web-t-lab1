@@ -9,6 +9,8 @@
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
+        <script src="covervid-master/covervid.min.js"></script>
+
         <meta charset="utf-8">
     </head>
     <body>
@@ -94,6 +96,66 @@
                 </div>
                 <script src="https://sinoptik.uk/api/informer/content?loc=bwCOPQVnBMPuCQDr2Uirbw6l&cem=ir=JGMJubQVOPUVuPHD7cM=0cTYUcnHEBM3SPwgnPSN6bQg"></script>
             </div>
+            <div class="task">
+                <!-- Minfin.com.ua currency informer 297x120 blue-->
+                <div id="minfin-informer-m1Fn-currency">
+                    Завантажуємо
+                    <a href="https://minfin.com.ua/ua/currency/" target="_blank">курси валют</a>
+                    від minfin.com.ua
+                </div>
+                <noscript>
+                    <img src="https://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курси валют" title="Курс валют" border="0" />
+                </noscript>
+                <!-- Minfin.com.ua currency informer 297x120 blue-->
+            </div>
+            <div class="task">
+                <!-- clock widget start -->
+                <script type="text/javascript">
+                    var css_file=document.createElement("link");
+                    css_file.setAttribute("rel","stylesheet");
+                    css_file.setAttribute("type","text/css");
+                    css_file.setAttribute("href","https://s.bookcdn.com//css/cl/bw-cl-sm1.css?v=0.0.1");
+                    document.getElementsByTagName("head")[0].appendChild(css_file);
+                </script>
+                <div id="tw_24_1200580113">
+                    <div style="width:200px; height:px; margin: 0 auto;">
+                        <a href="https://hotelmix.com.ua/time/kyiv-18881">Київ</a><br/>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    function setWidgetData_1200580113(data){
+                        if(typeof(data) != 'undefined' && data.results.length > 0) {
+                            for(var i = 0; i < data.results.length; ++i) {
+                                var objMainBlock = '';
+                                var params = data.results[i];
+                                objMainBlock = document.getElementById('tw_'+params.widget_type+'_'+params.widget_id);
+                                if(objMainBlock !== null)
+                                    objMainBlock.innerHTML = params.html_code;
+                            }
+                        }
+                    }
+                    var clock_timer_1200580113 = -1;
+                    widgetSrc = "https://widgets.booked.net/time/info?ver=2;domid=966;type=24;id=1200580113;scode=48478;city_id=18881;wlangid=29;mode=1;details=0;background=f3f3f3;border_color=ffffff;color=000000;add_background=ffffff;add_color=333333;head_color=ffffff;border=1;transparent=0";
+                    var widgetUrl = location.href;
+                    widgetSrc += '&ref=' + widgetUrl;
+                    var wstrackId = "";
+                    if (wstrackId) {
+                        widgetSrc += ';wstrackId=' + wstrackId + ';'
+                    }
+                    var timeBookedScript = document.createElement("script");
+                    timeBookedScript.setAttribute("type", "text/javascript");
+                    timeBookedScript.src = widgetSrc; document.body.appendChild(timeBookedScript);
+                </script>
+                <!-- clock widget end -->
+
+            </div>
+        </div>
+        <div id="task6">
+            <h2>Завдання 6</h2>
+            <div class="task">
+                <h4>Використання плагіну Covervid</h4>
+                <a href="covervid.html">Відкрити сайт</a>
+            </div>
         </div>
 
 
@@ -118,6 +180,10 @@
             $( function() {
                 $( document ).tooltip();
             } );
+
+            var iframe = '<ifra'+'me width="297" height="120" fram'+'eborder="0" src="https://informer.minfin.com.ua/ua/gen/course/?color=blue" vspace="0" scrolling="no" hspace="0" allowtransparency="true"style="width:297px;height:120px;ove'+'rflow:hidden;"></iframe>';
+            var cl = 'minfin-informer-m1Fn-currency';
+            document.getElementById(cl).innerHTML = iframe;
         </script>
     </body>
 </html>

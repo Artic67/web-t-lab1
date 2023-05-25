@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>БІБЛІОТЕКА JQUERY UI</title>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/excite-bike/jquery-ui.css">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+        <script src="covervid-master/covervid.min.js"></script>
+
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <div class="covervid-wrapper">
+            <video class="masthead-video" autoplay="" loop="" muted="" style="height: 1050px; width: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    			<source src="videos/video3.mp4" type="video/mp4">
+    			<source src="videos/video3.webm" type="video/webm">
+            </video>
+        </div>
+        <h1 style="transform: translateY(600%);">Відео фон для напису</h1>
+
+        <div class="covervid-under">
+            <h1>Заголовк 1</h1>
+            <h1>Заголовк 2</h1>
+        </div>
+        <script>
+            $('.covervid-video').coverVid(1920, 1080);
+        </script>
+    </body>
+</html>
