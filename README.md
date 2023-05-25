@@ -2,7 +2,7 @@
 WEB-oriented technologies
 
 ### Поточна версія сайту - [лінк](https://artic67.github.io/web-t-labs/)
-### Звіт - [лінк](https://artic67.github.io/web-t-labs/reports/report1/report-lab1.html)
+### Звіт - [лінк](https://artic67.github.io/web-t-labs/reports/report3/report-lab3.html)
 ### Код звітів:
 Лабораторна робота 1:
 
