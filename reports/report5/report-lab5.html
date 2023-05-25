@@ -6,8 +6,8 @@
         <button style="background: white; border-radius: 10px; height: 60px; width: 100px;">
             Лабораторна робота №1</button>
     </form>
-    <form action="report-lab2.html" target=_self">
-        <button style="background: yellow; border-radius: 10px; height: 60px; width: 100px;">
+    <form action="../report2/report-lab2.html" target=_self">
+        <button style="background: white; border-radius: 10px; height: 60px; width: 100px;">
             Лабораторна робота №2</button>
     </form>
     <form action="" target="_self">
@@ -18,8 +18,8 @@
         <button style="background: white; border-radius: 10px; height: 60px; width: 100px;">
             Лабораторна робота №4</button>
     </form>
-    <form action="../report5/report-lab5.html" target="_self">
-        <button style="background: white; border-radius: 10px; height: 60px; width: 100px;">
+    <form action="report-lab6.html" target="_self">
+        <button style="background: yellow; border-radius: 10px; height: 60px; width: 100px;">
             Лабораторна робота №5</button>
     </form>
     <form action="" target="_self">
@@ -44,58 +44,66 @@
     </tr>
 </table>
 <button onclick="changeText(1)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>Тема, мета ЛР №2 Місце розташування сайту, звіту</strong></button><br></br>
+    <strong>Тема, мета ЛР №5 Місце розташування сайту, звіту</strong></button><br></br>
 <button onclick="changeText(2)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>Способи підключення стилів</strong></button><br></br>
+    <strong>Динамічні елементи 3 пункту</strong></button><br></br>
 <button onclick="changeText(3)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>Селектор тегу</strong></button><br></br>
+    <strong>Галерея UniteGallery</strong></button><br></br>
 <button onclick="changeText(4)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>Селектор класу</strong></button><br></br>
+    <strong>Фотогалерея</strong></button><br></br>
 <button onclick="changeText(5)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>Селектор ідентифікатору</strong></button><br></br>
+    <strong>Слайдер фотографій</strong></button><br></br>
 <button onclick="changeText(6)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>Інші селектори</strong></button><br></br>
+    <strong>Слайдер фідеоматеріалів</strong></button><br></br>
 <button onclick="changeText(7)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>CSS: Шрифти Текст Таблиці Фон Контур Списки СSS Просунутий</strong></button><br></br>
+    <strong>Кнопки соціальних мереж</strong></button><br></br>
 <button onclick="changeText(8)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>ВИСНОВКИ до ЛР №2</strong></button><br></br>
+    <strong>Інформери</strong></button><br></br>
+<button onclick="changeText(9)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
+    <strong>ВИСНОВКИ до ЛР №5</strong></button><br></br>
 <script>
     function changeText(num) {
         event.preventDefault();
         switch (num) {
             case 1:
                 document.getElementById("cell").innerHTML = `
-                  <h4>Тема:</h4> <p>КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ.</p>
+                  <h4>Тема:</h4> <p>ВИКОРИСТАННЯ В СЦЕНАРІЯХ JAVASCRIPT БІБЛІОТЕК КРОС-БРАУЗЕРНИХ
+                      ІНТЕРФЕЙСІВ МЕТОДІВ DOM. БІБЛІОТЕКА JQUERY UI.
+                      ЗАСОБИ НАЛАГОДЖЕННЯ І ТЕСТУВАННЯ СЦЕНАРІЇВ JAVASCRIPT.</p>
 
-                  <h4>Мета:</h4> <p>придбати практичні навички роботи з селекторами, ідентифікаторами, списками, різноманітними властивостями кольору
-                  і фону, зовнішними та внутрішними відступами, плаваючими елементами, оформленням текстових елементів.</p>
+                  <h4>Мета:</h4> <p>придбати практичні навички роботи jQuery UI, вміти додавати до
+                      сайту динамічні елементи цієї бібліотеки, плагін галереї UniteGallery,
+                      кнопки соціальних мереж, інформери та інше.</p>
 
-                  <h4>Сайт:</h4> <a href="https://artic67.github.io/web-t-labs/" target="_blank">E-квитки для потягів</a><br>
-                  <h4>Звіт:</h4> <a href="https://artic67.github.io/web-t-labs/reports/report2/report-lab2.html" target="_blank">Звіт 2</a>`;
+                  <h4>Сайт:</h4> <a href="https://artic67.github.io/web-t-labs/lab5.html" target="_blank">E-квитки для потягів</a><br>
+                  <h4>Звіт:</h4> <a href="https://artic67.github.io/web-t-labs/reports/report5/report-lab5.html" target="_blank">Звіт 5</a>`;
                 break;
             case 2:
-                document.getElementById("cell").innerHTML = `<img src="./report2.3.png" alt="style connect 1">`;
+                document.getElementById("cell").innerHTML = `<img src="./report5.2.png" alt="elements point 3">`;
                 break;
             case 3:
-                document.getElementById("cell").innerHTML = `<img src="./report2.4.png" alt="tag selector">`;
+                document.getElementById("cell").innerHTML = `<img src="./report5.3.png" alt="unitegallery">`;
                 break;
             case 4:
-                document.getElementById("cell").innerHTML = `<img src="./report2.5.png" alt="class selector">`;
+                document.getElementById("cell").innerHTML = `<img src="./report5.4.png" alt="tilegallery">`;
                 break;
             case 5:
-                document.getElementById("cell").innerHTML = `<img src="./report2.6.png" alt="identifier selector">`;
+                document.getElementById("cell").innerHTML = `<img src="./report5.5.png" alt="sliderphotogallery">`;
                 break;
             case 6:
-                document.getElementById("cell").innerHTML = `<img src="./report2.7.png" alt="another selector">`;
+                document.getElementById("cell").innerHTML = `<img src="./report5.6.png" alt="slidervideogallery">`;
                 break;
             case 7:
-                document.getElementById("cell").innerHTML = `<img src="./report2.8.png" alt="another selector 2">`;
+                document.getElementById("cell").innerHTML = `<img src="./report5.7.png" alt="social networks buttons">`;
                 break
             case 8:
+                document.getElementById("cell").innerHTML = `<img src="./report5.8.png" alt="informers">`;
+                break
+            case 9:
                 document.getElementById("cell").innerHTML = `<h4>ВИСНОВКИ до ЛР №2</h4>
-                <p>Виконавши лабораторну 2, ми придбали практичні навички роботи з селекторами, ідентифікаторами,
-                списками, різноманітними властивостями кольору і фону, зовнішними та внутрішними відступами, плаваючими елементами, оформленням текстових
-                елементів.</p>`;
+                <p>Виконавши лабораторну 5, ми придбали практичні навички роботи з jQuery UI. Навсчились додавати різного роду елемнти,
+                    модулі з цієї бібліотеки. Також навчились користуватись надбудовами на плагін, а саме UniteGallery та Covervid.
+                    Були вивчені методи додавання кнопок соціальних мереж та інформерів.</p>`;
                 break;
             default:
                 document.getElementById("cell").innerHTML = "Код зломався";
