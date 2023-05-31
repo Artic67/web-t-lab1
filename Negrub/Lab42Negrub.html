@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Варіант 4. Негруб Артем</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .editor-container {
+            display: flex;
+        }
+
+        .editor {
+            width: 400px;
+            margin-right: 20px;
+        }
+
+        .formatting-buttons {
+            margin-bottom: 10px;
+        }
+
+        .preview {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="editor-container">
+        <div class="editor">
+            <div class="formatting-buttons">
+                <button onclick="formatText('bold')">Напівжирний</button>
+                <button onclick="formatText('italic')">Нахил</button>
+                <button onclick="formatText('underline')">Підкреслення</button>
+            </div>
+            <div class="formatting-buttons">
+                <label for="color">Колір тексту:</label>
+                <input type="color" id="color" onchange="formatText('color', this.value)">
+            </div>
+            <div class="formatting-buttons">
+                <button onclick="formatText('uppercase')">Верхній регістр</button>
+                <button onclick="formatText('lowercase')">Нижній регістр</button>
+            </div>
+            <textarea id="text-input" rows="10" cols="40" oninput="updatePreview()"></textarea>
+        </div>
+        <div class="preview" id="preview" style="width: 200px;"></div>
+    </div>
+
+    <script>
+        function formatText(action, value = '') {
+            const textarea = document.getElementById('text-input');
+            const start = textarea.selectionStart;
+            const end = textarea.selectionEnd;
+            const selectedText = textarea.value.substring(start, end);
+
+            let modifiedText = '';
+            switch (action) {
+                case 'bold':
+                    modifiedText = `<b>${selectedText}</b>`;
+                    break;
+                case 'italic':
+                    modifiedText = `<i>${selectedText}</i>`;
+                    break;
+                case 'underline':
+                    modifiedText = `<u>${selectedText}</u>`;
+                    break;
+                case 'color':
+                    modifiedText = `<span style="color: ${value}">${selectedText}</span>`;
+                    break;
+                case 'uppercase':
+                    modifiedText = selectedText.toUpperCase();
+                    break;
+                case 'lowercase':
+                    modifiedText = selectedText.toLowerCase();
+                    break;
+                default:
+                    modifiedText = selectedText;
+            }
+
+            const newText = textarea.value.substring(0, start) + modifiedText + textarea.value.substring(end);
+            textarea.value = newText;
+            updatePreview();
+        }
+
+        function updatePreview() {
+            const textarea = document.getElementById('text-input');
+            const preview = document.getElementById('preview');
+            preview.innerHTML = textarea.value;
+        }
+    </script>
+</body>
+</html>
