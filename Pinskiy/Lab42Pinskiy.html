@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Варіант 6. Пінський Михайло</title>
+  <style>
+    .calendar {
+      width: 300px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      font-family: Arial, sans-serif;
+    }
+
+    .calendar label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .calendar select {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    .calendar button {
+      background-color: #ccc;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .selected-date {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="calendar">
+    <label for="day">День:</label>
+    <select id="day">
+      <option value="">Виберіть день</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option>
+      <option value="25">25</option>
+      <option value="26">26</option>
+      <option value="27">27</option>
+      <option value="28">28</option>
+      <option value="29">29</option>
+      <option value="30">30</option>
+    </select>
+
+    <label for="month">Місяць:</label>
+    <select id="month">
+      <option value="">Виберіть місяць</option>
+      <option value="1">Січень</option>
+      <option value="2">Лютий</option>
+      <option value="3">Березень</option>
+      <option value="4">Квітень</option>
+      <option value="5">Травень</option>
+      <option value="6">Червень</option>
+      <option value="7">Липень</option>
+      <option value="8">Серпень</option>
+      <option value="9">Вересень</option>
+      <option value="10">Жовтень</option>
+      <option value="11">Листопад</option>
+      <option value="12">Грудень</option>
+    </select>
+
+    <label for="year">Рік:</label>
+    <select id="year">
+      <option value="">Виберіть рік</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option value="2024">2024</option>
+      <option value="2025">2025</option>
+      <option value="2026">2026</option>
+      <option value="2027">2027</option>
+      <option value="2028">2028</option>
+      <option value="2029">2029</option>
+    </select>
+
+    <button id="cancel" style="background-color: rgb(34, 0, 156); text-decoration: solid; text-decoration: black;">Cancel date choice</button>
+
+    <div class="selected-date" id="selectedDate"></div>
+  </div>
+
+  <script>
+    const daySelect = document.getElementById('day');
+    const monthSelect = document.getElementById('month');
+    const yearSelect = document.getElementById('year');
+    const cancelButton = document.getElementById('cancel');
+    const selectedDateDiv = document.getElementById('selectedDate');
+
+    cancelButton.addEventListener('click', () => {
+      daySelect.value = '';
+      monthSelect.value = '';
+      yearSelect.value = '';
+      selectedDateDiv.textContent = '';
+    });
+
+    daySelect.addEventListener('change', updateSelectedDate);
+    monthSelect.addEventListener('change', updateSelectedDate);
+    yearSelect.addEventListener('change', updateSelectedDate);
+
+    function updateSelectedDate() {
+      const day = daySelect.value;
+      const month = monthSelect.value;
+      const year = yearSelect.value;
+      selectedDateDiv.textContent = `Вибрана дата: ${day}.${month}.${year}`;
+    }
+  </script>
+</body>
+</html>
