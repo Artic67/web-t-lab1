@@ -2,8 +2,8 @@
 <h2 style="text-align: center;"><strong>БРИГАДА №10</strong></h2>
 <p><strong>Студенти: гр. ІП-03 Пінський Михайло, гр. ІП-03 Негруб Артем, гр. ІП-02 Середюк Валентин</strong></p>
 <table>
-    <form action="../report1/report-lab1.html" target="_self">
-        <button style="background: white; border-radius: 10px; height: 60px; width: 100px;">
+    <form action="report-lab1.html" target="_self">
+        <button style="background: yellow; border-radius: 10px; height: 60px; width: 100px;">
             Лабораторна робота №1
         </button>
     </form>
@@ -12,17 +12,17 @@
             Лабораторна робота №2
         </button>
     </form>
-    <form action="report-lab3.html" target="_self">
-        <button style="background: yellow; border-radius: 10px; height: 60px; width: 100px;">
+    <form action="../report3/report-lab3.html" target="_self">
+        <button style="background: white; border-radius: 10px; height: 60px; width: 100px;">
             Лабораторна робота №3
         </button>
     </form>
-    <form action="../report4/report-lab4.html" target="_self">
+    <form action="" target="_self">
         <button style="background: white; border-radius: 10px; height: 60px; width: 100px;">
             Лабораторна робота №4
         </button>
     </form>
-    <form action="../report5/report-lab5.html" target="_self">
+    <form action="" target="_self">
         <button style="background: white; border-radius: 10px; height: 60px; width: 100px;">
             Лабораторна робота №5
         </button>
@@ -64,30 +64,46 @@
 </button>
 <br></br>
 <button onclick="changeText(4)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>Фіксована табдична верстка</strong>
+    <strong>Завдання 2.1 Пінський</strong>
 </button>
 <br></br>
 <button onclick="changeText(5)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>гумова блокова верстка</strong>
+    <strong>Завдання 2.2 Пінський</strong>
 </button>
 <br></br>
 <button onclick="changeText(6)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>Завдання 3 Середюк</strong>
+    <strong>Завдання 2.1 Негруб</strong>
 </button>
 <br></br>
 <button onclick="changeText(7)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>Завдання 3 Негруб</strong>
+    <strong>Завдання 2.2 Негруб</strong>
 </button>
 <br></br>
 <button onclick="changeText(8)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>Завдання 3 Пінський</strong>
+    <strong>Завдання 2.1 Середюк</strong>
 </button>
 <br></br>
 <button onclick="changeText(9)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>ВИСНОВКИ до ЛР №3</strong>
+    <strong>Завдання 2.2 Середюк</strong>
 </button>
 <br></br>
 <button onclick="changeText(10)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
+    <strong>Завдання 3 Середюк</strong>
+</button>
+<br></br>
+<button onclick="changeText(11)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
+    <strong>Завдання 3 Негруб</strong>
+</button>
+<br></br>
+<button onclick="changeText(12)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
+    <strong>Завдання 3 Пінський</strong>
+</button>
+<br></br>
+<button onclick="changeText(13)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
+    <strong>ВИСНОВКИ до ЛР №3</strong>
+</button>
+<br></br>
+<button onclick="changeText(14)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
     <strong>ВИКОНАВЦІ</strong>
 </button>
 <br></br>
@@ -102,7 +118,7 @@
                   <h4>Мета:</h4> <p>придбати практичні навички роботи верстки сторінок засобами CSS, верстки на основі плаваючих елементів, з’ясувати переваги та недоліки типів макетів веб- сторінок ,придбати практичні навички роботи верстки сторінок засобами CSS та FLEXBOX</p>
 
                   <h4>Сайт:</h4> <a href="https://artic67.github.io/web-t-labs/" target="_blank">E-квитки для потягів</a><br>
-                  <h4>Звіт:</h4> <a href="https://artic67.github.io/web-t-labs/reports/report3/report-lab3.html" target="_blank">Звіт 3</a>`;
+                  <h4>Звіт:</h4> <a href="https://artic67.github.io/web-t-labs/reports/report3/report-lab3.html" target="_blank">Звіт 1</a>`;
                 break;
             case 2:
                 document.getElementById("cell").innerHTML = `<img src="../report3/report3.1.png" alt="main page">`;
@@ -110,39 +126,62 @@
             case 3:
                 document.getElementById("cell").innerHTML = `<h4>Головна сторінка додатку:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab1/index.html" target="_blank">код</a>
                 <h4>Сторіка опису додатку:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab1/business_logic.html" target="_blank">код</a>
-                <h4>Звіт до лабораторної 1:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab1/reports/report1/report-lab1.html" target="_blank">код</a>`;
+                <h4>Звіт до лабораторної 3:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab3/reports/report3/report-lab3.html" target="_blank">код</a>`;
                 break;
             case 4:
                 document.getElementById("cell").innerHTML = `<img src="../report3/report3.2.png" alt="main page">
-                 <h4>Код завдання:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab3/lab3.1/3_2Lab.html" target="_blank">код</a>`;
+                 <h4>Код завдання:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab3/Pisnkiy/Lab3_2.html" target="_blank">код</a>`;
 
                 break;
             case 5:
                 document.getElementById("cell").innerHTML = `<img src="../report3/report3.3.png" alt="main page">
-                 <h4>Код завдання:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab3/lab3.1/3_22Lab.html" target="_blank">код</a>`;
+                 <h4>Код завдання:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab3/Pisnkiy/Lab3_22.html" target="_blank">код</a>`;
 
                 break;
             case 6:
+                document.getElementById("cell").innerHTML = `<img src="../report3/report3.9.png" alt="main page">
+                 <h4>Код завдання:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab3/Negrub/4var_1.html" target="_blank">код</a>`;
+
+                break;
+            case 7:
+                document.getElementById("cell").innerHTML = `<img src="../report3/report3.10.png" alt="main page">
+                 <h4>Код завдання:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab3/Negrub/4var_2.html" target="_blank">код</a>`;
+
+                break;
+            case 8:
+                document.getElementById("cell").innerHTML = `<img src="../report3/report3.8.png" alt="main page">
+                 <h4>Код завдання:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab3/Serediuk/var3_1.html" target="_blank">код</a>`;
+
+                break;
+            case 9:
+                document.getElementById("cell").innerHTML = `<img src="../report3/report3.7.png" alt="main page">
+                 <h4>Код завдання:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab3/Serediuk/var3_2.html" target="_blank">код</a>`;
+
+                break;
+            case 10:
                 document.getElementById("cell").innerHTML = `<img src="../report3/report3.4.png" alt="main page">
                  <h4>Код завдання:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab3/Serediuk/index.html" target="_blank">код</a>`;
 
                 break;
-            case 7:
+            
+            case 11:
                 document.getElementById("cell").innerHTML = `<img src="../report3/report3.5.png" alt="main page">
                  <h4>Код завдання:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab3/Negrub/index.html" target="_blank">код</a>`;
 
                 break;
-            case 8:
+            case 12:
                 document.getElementById("cell").innerHTML = `<img src="../report3/report3.6.png" alt="main page">
                  <h4>Код завдання:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab3/Pinskiy/index.html" target="_blank">код</a>`;
 
                 break;
-            case 9:
+            case 13:
                 document.getElementById("cell").innerHTML = `<h4>ВИСНОВКИ до ЛР №3</h4>
-                <p>Виконавши лабораторну та самостійну роботу 3, ми придбали практичні навички роботи верстки сторінок засобами CSS, верстки на основі плаваючих елементів, з’ясували переваги та недоліки типів макетів веб-сторінок ,придбати практичні навички роботи верстки сторінок засобами CSS та FLEXBOX</p>
-.</p>`;
+                <p>Виконавши лабораторну та самостійну роботу 3, ми Виконавши лабораторну та самостійну роботу 3,
+                ми навчилися використовувати різні технології верстки, як блочна та табична верстка, дізналися,
+                що блочна верстка може потребувати більше коду ніж табична для створення деяких структур, хоча вона є більш адаптивною під легкі завдання та
+                дозволяє розташуати елементи у зручному виді для аналізу. Також, було засвоєно верстку засобом flexbox</p>`;
                 break;
-            case 10:
+            case 14:
                 document.getElementById("cell").innerHTML = `<h4>ВИКОНАВЦІ</h4><br><p>гр. ІП-03 Пінський Михайло, гр. ІП-03 Негруб Артем, гр. ІП-02 Середюк Валентин</p>`;
                 break;
             default:
