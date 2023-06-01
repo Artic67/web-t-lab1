@@ -14,12 +14,12 @@
         <button style="background: white; border-radius: 10px; height: 60px; width: 100px;">
             Лабораторна робота №3</button>
     </form>
-    <form action="../report4/report-lab4.html" target="_self">
-        <button style="background: white; border-radius: 10px; height: 60px; width: 100px;">
+    <form action="report-lab4.html" target="_self">
+        <button style="background: yellow; border-radius: 10px; height: 60px; width: 100px;">
             Лабораторна робота №4</button>
     </form>
-    <form action="report-lab5.html" target="_self">
-        <button style="background: yellow; border-radius: 10px; height: 60px; width: 100px;">
+    <form action="../report5/report-lab5.html" target="_self">
+        <button style="background: white; border-radius: 10px; height: 60px; width: 100px;">
             Лабораторна робота №5</button>
     </form>
     <form action="" target="_self">
@@ -44,66 +44,60 @@
     </tr>
 </table>
 <button onclick="changeText(1)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>Тема, мета ЛР №5 Місце розташування сайту, звіту</strong></button><br></br>
+    <strong>Тема, мета ЛР №4 Місце розташування звіту</strong></button><br></br>
 <button onclick="changeText(2)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>Динамічні елементи 3 пункту</strong></button><br></br>
+    <strong>2 Пункт Середюк</strong></button><br></br>
 <button onclick="changeText(3)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>Галерея UniteGallery</strong></button><br></br>
+    <strong>2 Пункт Пінський</strong></button><br></br>
 <button onclick="changeText(4)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>Фотогалерея</strong></button><br></br>
+    <strong>2 Пункт Негруб</strong></button><br></br>
 <button onclick="changeText(5)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>Слайдер фотографій</strong></button><br></br>
+    <strong>4 Пункт Середюк</strong></button><br></br>
 <button onclick="changeText(6)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>Слайдер фідеоматеріалів</strong></button><br></br>
+    <strong>4 Пункт Пінський</strong></button><br></br>
 <button onclick="changeText(7)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>Кнопки соціальних мереж</strong></button><br></br>
+    <strong>4 Пункт Негруб</strong></button><br></br>
 <button onclick="changeText(8)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>Інформери</strong></button><br></br>
-<button onclick="changeText(9)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
-    <strong>ВИСНОВКИ до ЛР №5</strong></button><br></br>
+    <strong>ВИСНОВКИ до ЛР №4</strong></button><br></br>
 <script>
     function changeText(num) {
         event.preventDefault();
         switch (num) {
             case 1:
                 document.getElementById("cell").innerHTML = `
-                  <h4>Тема:</h4> <p>ВИКОРИСТАННЯ В СЦЕНАРІЯХ JAVASCRIPT БІБЛІОТЕК КРОС-БРАУЗЕРНИХ
-                      ІНТЕРФЕЙСІВ МЕТОДІВ DOM. БІБЛІОТЕКА JQUERY UI.
-                      ЗАСОБИ НАЛАГОДЖЕННЯ І ТЕСТУВАННЯ СЦЕНАРІЇВ JAVASCRIPT.</p>
+                  <h4>Тема:</h4> <p>ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ.ВИКОРИСТАННЯ МАСИВІВ У JS-СЦЕНАРІЯХ. РЕАЛІЗАЦІЯ ПРОГРАМ ЗАСОВАМИ МОВИ JAVASCRIPT</p>
 
-                  <h4>Мета:</h4> <p>придбати практичні навички роботи jQuery UI, вміти додавати до
-                      сайту динамічні елементи цієї бібліотеки, плагін галереї UniteGallery,
-                      кнопки соціальних мереж, інформери та інше.</p>
-
-                  <h4>Сайт:</h4> <a href="https://artic67.github.io/web-t-labs/lab5.html" target="_blank">E-квитки для потягів</a><br>
-                  <h4>Звіт:</h4> <a href="https://artic67.github.io/web-t-labs/reports/report5/report-lab5.html" target="_blank">Звіт 5</a>`;
+                  <h4>Мета:</h4> <p>придбати практичні навички роботи з масивами у js-сценаріях. Реалізація програм засовами мови JAVASCRIPT</p>
+                  <h4>Звіт:</h4> <a href="https://artic67.github.io/web-t-labs/reports/report2/report-lab2.html" target="_blank">Звіт 4</a>`;
                 break;
             case 2:
-                document.getElementById("cell").innerHTML = `<img src="./report5.2.png" alt="elements point 3">`;
+                document.getElementById("cell").innerHTML = `<img src="./report4.1.png" alt="variant3">
+                <h4>Код завдання:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab4/Serediuk/Lab41Sereduk.html" target="_blank">код</a>`;
                 break;
             case 3:
-                document.getElementById("cell").innerHTML = `<img src="./report5.3.png" alt="unitegallery">`;
+                document.getElementById("cell").innerHTML = `<img src="./report4.2.png" alt="variant6">
+                <h4>Код завдання:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab4/Pinskiy/Lab41Pinskiy.html" target="_blank">код</a>`;
                 break;
             case 4:
-                document.getElementById("cell").innerHTML = `<img src="./report5.4.png" alt="tilegallery">`;
+                document.getElementById("cell").innerHTML = `<img src="./report4.3.png" alt="variant4">
+                <h4>Код завдання:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab4/Negrub/Lab41Negrub.html" target="_blank">код</a>`;
                 break;
             case 5:
-                document.getElementById("cell").innerHTML = `<img src="./report5.5.png" alt="sliderphotogallery">`;
+                document.getElementById("cell").innerHTML = `<img src="./report4.4.png" alt="variant4">
+                <h4>Код завдання:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab4/Serediuk/Lab42Sereduk.html" target="_blank">код</a>`;
                 break;
             case 6:
-                document.getElementById("cell").innerHTML = `<img src="./report5.6.png" alt="slidervideogallery">`;
+                document.getElementById("cell").innerHTML = `<img src="./report4.5.png" alt="variant4">
+                <h4>Код завдання:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab4/Pinskiy/Lab42Pinskiy.html" target="_blank">код</a>`;
                 break;
             case 7:
-                document.getElementById("cell").innerHTML = `<img src="./report5.7.png" alt="social networks buttons">`;
-                break
+                document.getElementById("cell").innerHTML = `<img src="./report4.6.png" alt="variant4">
+                <h4>Код завдання:</h4> <a href="https://github.com/Artic67/web-t-labs/blob/lab4/Negrub/Lab42Negrub.html" target="_blank">код</a>`;
+                break;
             case 8:
-                document.getElementById("cell").innerHTML = `<img src="./report5.8.png" alt="informers">`;
-                break
-            case 9:
-                document.getElementById("cell").innerHTML = `<h4>ВИСНОВКИ до ЛР №5</h4>
-                <p>Виконавши лабораторну 5, ми придбали практичні навички роботи з jQuery UI. Навсчились додавати різного роду елемнти,
-                    модулі з цієї бібліотеки. Також навчились користуватись надбудовами на плагін, а саме UniteGallery та Covervid.
-                    Були вивчені методи додавання кнопок соціальних мереж та інформерів.</p>`;
+                document.getElementById("cell").innerHTML = `<h4>ВИСНОВКИ до ЛР №4</h4>
+                <p>Виконавши лабораторну 4, ми придбали практичні навички роботи з функціонувальним застосуванням JS для реалізації скриптів та програм для HTML документів.
+                Також, було вивчено роботу з масивами</p>`;
                 break;
             default:
                 document.getElementById("cell").innerHTML = "Код зломався";
